@@ -141,7 +141,7 @@ namespace wpAPI.Controllers
 
                 List<Dropdown> dropdown = _context.Dropdowns.Where(x => x.Code == "STORAGETYPE").ToList();
 
-                List<Rate> rate = _context.Rates.Where(x => x.Status == 1).Take(5).ToList();
+                List<Rate> rate = _context.Rates.Where(x => x.Status == 1).ToList();
                 int rateCount = _context.Rates.Where(x => x.Status == 1).Count();
                 List<TermsAndCondition> termsAndCondition = _context.TermsAndConditions.Where(x => x.Status == 1).ToList();
                 int termsAndConditionCount = _context.TermsAndConditions.Where(x => x.Status == 1).Count();
@@ -621,13 +621,15 @@ namespace wpAPI.Controllers
 
                 var splits = transaction.ReferenceDate.Split('/');
 
-                var sad = DateTime.Parse(transaction.ReferenceDate).ToString("d MMMM yyyy");
-                //var sad = DateTime.Parse(splits[1]+"/"+ splits[0] + "/" + splits[2]).ToString("d MMMM yyyy");
+                //Live
+                //var refDate = DateTime.Parse(transaction.ReferenceDate).ToString("d MMMM yyyy");
+                //Local
+                var refDate = DateTime.Parse(splits[1]+"/"+ splits[0] + "/" + splits[2]).ToString("d MMMM yyyy");
 
                 // Replace placeholders in the HTML content with relevant data for downloading
                 content = content.Replace("@reference", transaction.ReferenceNumber);
                 content = content.Replace("@revision", transaction.RevisedCount.ToString());
-                content = content.Replace("@refDate", sad);
+                content = content.Replace("@refDate", refDate);
                 content = content.Replace("@position", customer.Position);
                 content = content.Replace("@customerAddress", customer.CompanyAddress1);
                 content = content.Replace("@company", customer.CompanyName);

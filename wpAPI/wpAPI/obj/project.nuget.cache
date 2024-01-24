@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SqPTDM4hl3uc0xuppmgoHpfgBJeOKTBok6bf/bNQjfk89MMTGutnX9+GQNbmBPXM/As7zVeNcUMn4t+3ksIlDw==",
+  "dgSpecHash": "a6JrmU0Oae+c7bedWctqaETFLIdihYJKMTe4GUaSNEontA+na1QdFWDgzJVdbsnRNXFD5KC/BRvLFwbV7fkhpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wpAPI\\wpAPI\\wpAPI.csproj",
+  "projectFilePath": "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wp-back\\wpAPI\\wpAPI\\wpAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mjfalvarez\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\mjfalvarez\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

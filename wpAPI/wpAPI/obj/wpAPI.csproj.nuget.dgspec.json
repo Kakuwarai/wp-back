@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wpAPI\\wpAPI\\wpAPI.csproj": {}
+    "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wp-back\\wpAPI\\wpAPI\\wpAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wpAPI\\wpAPI\\wpAPI.csproj": {
+    "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wp-back\\wpAPI\\wpAPI\\wpAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wpAPI\\wpAPI\\wpAPI.csproj",
+        "projectUniqueName": "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wp-back\\wpAPI\\wpAPI\\wpAPI.csproj",
         "projectName": "wpAPI",
-        "projectPath": "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wpAPI\\wpAPI\\wpAPI.csproj",
+        "projectPath": "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wp-back\\wpAPI\\wpAPI\\wpAPI.csproj",
         "packagesPath": "C:\\Users\\mjfalvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wpAPI\\wpAPI\\obj\\",
+        "outputPath": "C:\\Users\\mjfalvarez\\Documents\\all gits folder\\Nuxt\\WPDB\\Wp Back\\wp-back\\wpAPI\\wpAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mjfalvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
