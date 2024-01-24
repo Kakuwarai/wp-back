@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hHouEjBDoePqbzJkOYunlIWIXTQuJjk+cnITZAMX9kc=",
+  "Source": "wpAPI",
+  "BasePath": "_content/wpAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

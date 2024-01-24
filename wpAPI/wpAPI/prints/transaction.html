@@ -1,0 +1,226 @@
+﻿﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        .header, .header-space,
+        .footer, .footer-space {
+            height: 100px;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+        }
+        .divR {
+            width: 100%;
+            display: flex;
+           
+        }
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #customers td, #customers th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #customers tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #customers tr:hover {
+                background-color: #ddd;
+                
+            }
+
+            #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: cornflowerblue;
+                color: white;
+            }
+            #customers thead {
+                display: table-header-group;
+            }
+
+        #customers tfoot {
+            display: table-row-group;
+        }
+
+        #customers tr {
+            page-break-inside: avoid;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <table style="padding=100px">
+     
+
+<tr>
+    <td>
+
+        <table style="width:100%">
+
+            <tr style=" width: 100%; Margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: arial, 'helvetica neue', helvetica, sans-serif; line-height: 21px; color: #333333; font-size: 14px">
+                <td style="width:70%"></td>
+                <td style="width:30%">
+                    <span style="font-weight:bold">Reference: @reference</span>
+                    <br />
+                    <span style="font-weight:bold">Revision : @revision</span>
+                    <br />
+                    <span style="font-weight:bold">Date     : @refDate</span>
+                </td>
+            </tr>
+
+        </table>
+
+
+        <table style="width:100%">
+
+            <tr style=" width:100%">
+                <td style="width: 20%; Margin:0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: arial, 'helvetica neue', helvetica, sans-serif; line-height: 21px; color: #333333; font-size: 14px" >
+                    <span>
+
+
+                        <br />
+                        <span style="font-weight:bold">@salutation. @customerName</span>
+                        <br />
+                        <span>@position</span>
+                        <br />
+                        <span style="font-weight:bold">@company</span>
+                        <br />
+                        <span>@customerAddress</span>
+                        <br />
+                        <br />
+                    </span>
+                </td>
+                <td style="width:30%">
+                </td>
+            </tr>
+
+        </table>
+        
+
+        <p style="Margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: arial, 'helvetica neue', helvetica, sans-serif; line-height: 21px; color: #333333; font-size: 14px">
+            Dear <span style="font-weight:bold">@salutation. @lastname</span>,
+        </p>
+
+        <p style="Margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: arial, 'helvetica neue', helvetica, sans-serif; line-height: 21px; color: #333333; font-size: 14px">
+            We are pleased to offer our rate proposal for your @storageType storage service
+            requirements in @serviceAddress for commodity @commodity ingredients:
+
+        </p>
+
+        <table id="customers" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px; font-size: 14px ">
+            <thead style="">
+                <tr style="font-weight:bold">
+                    <th>CHARGE CHARGES</th>
+                    <th>CURRENCY</th>
+                    <th>RATES</th>
+                    <th>UOM</th>
+                    <th>REMARKS</th>
+                </tr>
+            </thead>
+            @transactionDetails
+
+        </table>
+
+        <br>
+
+        <h3 style="Margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: arial, 'helvetica neue', helvetica, sans-serif; line-height: 21px; color: #333333; font-size: 14px ">Remarks:</h3>
+        <p style="white-space: pre-wrap; Margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: arial, 'helvetica neue', helvetica, sans-serif; line-height: 21px; color: #333333; font-size: 14px ">@remarks</p> 
+
+        
+        <br>
+        <h3 style="margin-top =10px; Margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: arial, 'helvetica neue', helvetica, sans-serif; line-height: 21px; color: #333333; font-size: 14px">TERMS & CONDITIONS:</h3>
+        @termsAndConditionCode
+        <!-- <table id="customers">
+        <thead>
+            <tr>
+                <th>CODE</th>
+                <th>DESCRIPTION</th>
+            </tr>
+        </thead>
+        @termsAndConditionCode
+    </table>-->
+    </td>
+</tr>
+
+<!--<thead>
+    <tr style="position:absolute;bottom:0px;">
+       
+        <th>  <div class="right">
+    <img style="margin-bottom:50px; width:00px" src="https://apps.fastlogistics.com.ph/fastdrive/warehouseproposal/footer1.png">
+</div></th>
+        
+    </tr>
+</thead>-->
+
+       
+    </table>
+
+    <table style="width:100%;Margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: arial, 'helvetica neue', helvetica, sans-serif; line-height: 21px; color: #333333; font-size: 14px">
+        <tr>
+            <td style="width:10%"></td>
+            <td style="width:50%;">
+                <p>Yours respectfully,</p>
+                <br><br>
+                <!-- style="text-decoration: overline;font-weight:bold"-->
+                <p>@userName </p>
+                <p>@userPos</p>
+
+            </td>
+
+            <td style="width: 40%;">
+                <p>Noted by:</p>
+                <br><br>
+                    <p>@notedBy</p>
+                    <p>@notedPos </p>
+
+            </td>
+
+        </tr>
+
+        <tr style="border:black 1px solid; height:10px">
+            <td style="width:10%">
+            </td>
+            <td> For <span style="font-weight:bold">@company :</span></td>
+        </tr>
+
+
+        <tr>
+            <td style="width:10%"></td>
+            <td style="width:50%;">
+                <p>CONFORME:_______________________</p>
+            
+
+            </td>
+
+            <td style="width: 40%;">
+                <p>Date:_______________</p>
+               
+
+            </td>
+
+        </tr>
+    </table>
+
+
+
+</body>
+</html>
